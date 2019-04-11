@@ -1,5 +1,8 @@
 # IsoplotRserver
 All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
+
+[本文档中文原版](https://github.com/chinageology/IsoplotRserver/blob/master/README_CN.md)
+
 # IsoplotRgui
 
 This repo is the steps fo building a server of **IsoplotR**. **IsoplotR** is writen by [Pieter Vermeesch](http://ucl.ac.uk/~ucfbpve). 
