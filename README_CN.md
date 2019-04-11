@@ -12,6 +12,8 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 
 [百度网盘 提取码：ov1r ](https://pan.baidu.com/s/1sAIgA9WT3z-aHrb2LMG6Ww)
 
+[微软云盘](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
+
 ## Ubuntu 18.04 server/desktop 下的安装指南
 
 你首先需要在电脑里安装好**R**(参考

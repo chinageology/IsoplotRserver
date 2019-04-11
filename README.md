@@ -15,6 +15,9 @@ Password : isoplotr
 [Baiduyun Code：ov1r ](https://pan.baidu.com/s/1sAIgA9WT3z-aHrb2LMG6Ww)
 
 
+[Onedrive](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
+
+
 ## For Ubuntu 18.04 server ONLY
 
 Install **R**(
