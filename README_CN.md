@@ -4,6 +4,14 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 
 这个项目是 **IsoplotR** 这一软件的服务器项目. **IsoplotR** 是一个自由的开源软件,用于同位素地球化学和地质年代学数据处理,由[Pieter Vermeesch](http://ucl.ac.uk/~ucfbpve)开发, 是对 Kenneth Ludwig 当年所开发的 Excel 插件 **Isoplot** 的替代品. 
 
+
+## 下载安装好 IsoplotRserver/Gui 的虚拟机
+
+用户名 : isoplotr
+密码 : isoplotr
+
+[百度网盘 提取码：ov1r ](https://pan.baidu.com/s/1sAIgA9WT3z-aHrb2LMG6Ww)
+
 ## Ubuntu 18.04 server/desktop 下的安装指南
 
 你首先需要在电脑里安装好**R**(参考

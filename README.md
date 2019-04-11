@@ -7,6 +7,14 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 
 This repo is the steps fo building a server of **IsoplotR**. **IsoplotR** is writen by [Pieter Vermeesch](http://ucl.ac.uk/~ucfbpve). 
 
+## Download A Packed up Virtual Machine wtih IsoplotRserver/Gui built inside
+
+Username : isoplotr
+Password : isoplotr
+
+[Baiduyun Code：ov1r ](https://pan.baidu.com/s/1sAIgA9WT3z-aHrb2LMG6Ww)
+
+
 ## For Ubuntu 18.04 server ONLY
 
 Install **R**(
