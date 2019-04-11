@@ -61,16 +61,15 @@ sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotRgui',force=TRUE)
 
 ## 安装 Shiny Server
 
-首先,你需要安装 gdebi 以及 wget, 用 wget 来下载 rstudio server 以及 shiny server 的安装包,然后用 gdebi 来安装它:
+首先,你需要安装 gdebi 以及 wget:
 ```Bash
 sudo apt install gdebi-core wget
-wget https://download2.rstudio.org/rstudio-server-1.0.136-amd64.deb
-sudo gdebi rstudio-server-1.0.136-amd64.deb
 ```
 
-然后,你需要用 wget 来下载 shiny server 的安装包,然后用 gedebi 来安装它:
+然后,用 wget 来下载 rstudio server 以及 shiny server 的安装包,然后用 gdebi 来安装:
 ```Bash
-sudo apt install gdebi-core wget
+wget https://download2.rstudio.org/rstudio-server-1.0.136-amd64.deb
+sudo gdebi rstudio-server-1.0.136-amd64.deb
 wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.9.923-amd64.deb
 sudo gdebi shiny-server-1.5.9.923-amd64.deb
 ```
