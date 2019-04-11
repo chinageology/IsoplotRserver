@@ -75,12 +75,6 @@ wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.9.923-am
 sudo gdebi shiny-server-1.5.9.923-amd64.deb
 ```
 
-然后你还需要安装下面的两个包:
-```Bash
-sudo su - -c "R -e \"install.packages('rmarkdown',repos='http://cran.rstudio.com/')\""
-sudo su - -c "R -e \"devtools::install_github('daattali/shinyjs',force=TRUE)\""
-```
-
 ## 搭建服务器
 
 
