@@ -116,7 +116,7 @@ Git clone the latest version of IsoplotRgui, and then copy all inside `IsoplotRg
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
-cp -R * /srv/shiny-server/IsoplotRshiny/R/
+sudo cp -R * /srv/shiny-server/IsoplotRshiny/R/
 ```
 
 ## Community Servers

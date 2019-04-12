@@ -1,15 +1,5 @@
 
-sudo apt install subversion
-sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
-cd /srv/shiny-server/IsoplotRshiny
-svn checkout --force
-https://github.com/pvermees/IsoplotRgui/tree/master/inst/shiny-examples/myapp/www
-svn export --force
-https://github.com/pvermees/IsoplotRgui/blob/master/inst/shiny-examples/myapp/server.R
 
-
-
-```Bash
 #Update IsoplotR to the latest on github:
 sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 #clone the latest version of IsoplotRgui
@@ -18,5 +8,15 @@ sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
-cp -R * /srv/shiny-server/IsoplotRshiny/R/
-```
+sudo cp -R * /srv/shiny-server/IsoplotRshiny/R/
+
+
+
+
+#sudo apt install subversion
+#sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
+#cd /srv/shiny-server/IsoplotRshiny
+#svn checkout --force https://github.com/pvermees/IsoplotRgui/tree/master/inst/shiny-examples/myapp/www
+#svn export --force https://github.com/pvermees/IsoplotRgui/blob/master/inst/shiny-examples/myapp/server.R
+
+
