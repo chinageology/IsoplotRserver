@@ -117,6 +117,7 @@ cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
 cp -R * /srv/shiny-server/IsoplotRshiny/R/
+```
 
 ## Community Servers
 
