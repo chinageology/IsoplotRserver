@@ -103,6 +103,21 @@ cp -R IsoplotRshiny /srv/shiny-server/
 
 Then visit http://yourserverip:3838/IsoplotRshiny/R/
 
+## Update A Installed Server To Latest
+
+
+Update IsoplotR to the latest on github:
+```Bash
+sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
+```
+
+Git clone the latest version of IsoplotRgui, and then copy all inside `IsoplotRgui/inst/shiny-examples/myapp/` to your server location, here as `/srv/shiny-server/IsoplotRshiny/`:
+```Bash
+cd /tmp
+git clone https://github.com/pvermees/IsoplotRgui
+cd IsoplotRgui/inst/shiny-examples/myapp/
+cp -R * /srv/shiny-server/IsoplotRshiny/
+
 ## Community Servers
 
 [http://isoplotr.london-geochron.com](http://ucl.ac.uk/~ucfbpve/isoplotr)

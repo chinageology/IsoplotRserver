@@ -108,6 +108,28 @@ cp -R IsoplotRshiny /srv/shiny-server/
 或者你也可以用你机器上的ip来访问, 比如你的地址是 10.10.10.10
 那就可以访问: http://10.10.10.10:3838/IsoplotRshiny/R/
 
+
+
+## 更新安装好的IsoplotR到最新版
+
+
+首先利用 devtools 从 github 安装 IsoplotR 这一核心程序的最近版:
+```Bash
+sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
+```
+
+然后再用 git 来克隆 IsoplotRgui 到本地文件夹, 将 `IsoplotRgui/inst/shiny-examples/myapp/` 这个目录下的全部内容复制覆盖到你的服务器文件夹即可，这里假设你的服务器在 `/srv/shiny-server/IsoplotRshiny/`:
+```Bash
+cd /tmp
+git clone https://github.com/pvermees/IsoplotRgui
+cd IsoplotRgui/inst/shiny-examples/myapp/
+cp -R * /srv/shiny-server/IsoplotRshiny/
+```
+
+
+## 社区服务器
+
+
 如果你安装不成功又着急用, 可以使用志愿者们搭建提供的服务器:
 
 [http://isoplotr.london-geochron.com](http://ucl.ac.uk/~ucfbpve/isoplotr)
