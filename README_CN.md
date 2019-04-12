@@ -123,7 +123,7 @@ sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
-cp -R * /srv/shiny-server/IsoplotRshiny/
+cp -R * /srv/shiny-server/IsoplotRshiny/R/
 ```
 
 
