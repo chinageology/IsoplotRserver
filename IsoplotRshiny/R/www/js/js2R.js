@@ -444,182 +444,182 @@ function getRcommand(prefs){
     out += ");";
     switch (geochronometer){
     case 'U-Pb':
-	out += "settings('iratio','Pb207Pb206'," +
+	out += "IsoplotR::settings('iratio','Pb207Pb206'," +
 	    prefs.constants.iratio.Pb207Pb206[0] + ");"
     case 'Pb-Pb':
-	out += "settings('iratio','Pb206Pb204'," +
+	out += "IsoplotR::settings('iratio','Pb206Pb204'," +
 	    prefs.constants.iratio.Pb206Pb204[0] + ");"
-	out += "settings('iratio','Pb207Pb204'," +
+	out += "IsoplotR::settings('iratio','Pb207Pb204'," +
 	    prefs.constants.iratio.Pb207Pb204[0] + ");"
-	out += "settings('iratio','U238U235'," +
+	out += "IsoplotR::settings('iratio','U238U235'," +
 	    prefs.constants.iratio.U238U235[0] + "," +
 	    prefs.constants.iratio.U238U235[1] + ");"
-	out += "settings('lambda','U238'," +
+	out += "IsoplotR::settings('lambda','U238'," +
 	    prefs.constants.lambda.U238[0] + "," +
 	    prefs.constants.lambda.U238[1] + ");"
-	out += "settings('lambda','U235'," +
+	out += "IsoplotR::settings('lambda','U235'," +
 	    prefs.constants.lambda.U235[0] + "," +
 	    prefs.constants.lambda.U235[1] + ");"
 	break;
     case 'Th-U':
-	out += "settings('lambda','Th230'," +
+	out += "IsoplotR::settings('lambda','Th230'," +
 	    prefs.constants.lambda.Th230[0] + "," +
 	    prefs.constants.lambda.Th230[1] + ");"
-	out += "settings('lambda','U234'," +
+	out += "IsoplotR::settings('lambda','U234'," +
 	    prefs.constants.lambda.U234[0] + "," +
 	    prefs.constants.lambda.U234[1] + ");"
 	break;
     case 'Ar-Ar':
-	out += "settings('iratio','Ar40Ar36'," +
+	out += "IsoplotR::settings('iratio','Ar40Ar36'," +
 	    prefs.constants.iratio.Ar40Ar36[0] + "," +
 	    prefs.constants.iratio.Ar40Ar36[1] + ");"
-	out += "settings('lambda','K40'," +
+	out += "IsoplotR::settings('lambda','K40'," +
 	    prefs.constants.lambda.K40[0] + "," +
 	    prefs.constants.lambda.K40[1] + ");"
 	break;
     case 'K-Ca':
-	out += "settings('iratio','Ca40Ca44'," +
+	out += "IsoplotR::settings('iratio','Ca40Ca44'," +
 	    prefs.constants.iratio.Ca40Ca44[0] + "," +
 	    prefs.constants.iratio.Ca40Ca44[1] + ");"
-	out += "settings('lambda','K40'," +
+	out += "IsoplotR::settings('lambda','K40'," +
 	    prefs.constants.lambda.K40[0] + "," +
 	    prefs.constants.lambda.K40[1] + ");"
 	break;
     case 'Sm-Nd':
-	out += "settings('iratio','Sm144Sm152'," +
+	out += "IsoplotR::settings('iratio','Sm144Sm152'," +
 	    prefs.constants.iratio.Sm144Sm152[0] + "," +
 	    prefs.constants.iratio.Sm144Sm152[1] + ");"
-	out += "settings('iratio','Sm147Sm152'," +
+	out += "IsoplotR::settings('iratio','Sm147Sm152'," +
 	    prefs.constants.iratio.Sm147Sm152[0] + "," +
 	    prefs.constants.iratio.Sm147Sm152[1] + ");"
-	out += "settings('iratio','Sm148Sm152'," +
+	out += "IsoplotR::settings('iratio','Sm148Sm152'," +
 	    prefs.constants.iratio.Sm148Sm152[0] + "," +
 	    prefs.constants.iratio.Sm148Sm152[1] + ");"
-	out += "settings('iratio','Sm149Sm152'," +
+	out += "IsoplotR::settings('iratio','Sm149Sm152'," +
 	    prefs.constants.iratio.Sm149Sm152[0] + "," +
 	    prefs.constants.iratio.Sm149Sm152[1] + ");"
-	out += "settings('iratio','Sm150Sm152'," +
+	out += "IsoplotR::settings('iratio','Sm150Sm152'," +
 	    prefs.constants.iratio.Sm150Sm152[0] + "," +
 	    prefs.constants.iratio.Sm150Sm152[1] + ");"
-	out += "settings('iratio','Sm154Sm152'," +
+	out += "IsoplotR::settings('iratio','Sm154Sm152'," +
 	    prefs.constants.iratio.Sm154Sm152[0] + "," +
 	    prefs.constants.iratio.Sm154Sm152[1] + ");"
-	out += "settings('iratio','Nd142Nd144'," +
+	out += "IsoplotR::settings('iratio','Nd142Nd144'," +
 	    prefs.constants.iratio.Nd142Nd144[0] + "," +
 	    prefs.constants.iratio.Nd142Nd144[1] + ");"
-	out += "settings('iratio','Nd143Nd144'," +
+	out += "IsoplotR::settings('iratio','Nd143Nd144'," +
 	    prefs.constants.iratio.Nd143Nd144[0] + "," +
 	    prefs.constants.iratio.Nd143Nd144[1] + ");"
-	out += "settings('iratio','Nd145Nd144'," +
+	out += "IsoplotR::settings('iratio','Nd145Nd144'," +
 	    prefs.constants.iratio.Nd145Nd144[0] + "," +
 	    prefs.constants.iratio.Nd145Nd144[1] + ");"
-	out += "settings('iratio','Nd146Nd144'," +
+	out += "IsoplotR::settings('iratio','Nd146Nd144'," +
 	    prefs.constants.iratio.Nd146Nd144[0] + "," +
 	    prefs.constants.iratio.Nd146Nd144[1] + ");"
-	out += "settings('iratio','Nd148Nd144'," +
+	out += "IsoplotR::settings('iratio','Nd148Nd144'," +
 	    prefs.constants.iratio.Nd148Nd144[0] + "," +
 	    prefs.constants.iratio.Nd148Nd144[1] + ");"
-	out += "settings('iratio','Nd150Nd144'," +
+	out += "IsoplotR::settings('iratio','Nd150Nd144'," +
 	    prefs.constants.iratio.Nd150Nd144[0] + "," +
 	    prefs.constants.iratio.Nd150Nd144[1] + ");"
-	out += "settings('lambda','Sm147'," +
+	out += "IsoplotR::settings('lambda','Sm147'," +
 	    prefs.constants.lambda.Sm147[0] + "," +
 	    prefs.constants.lambda.Sm147[1] + ");"	
 	break;
     case 'Re-Os':
-	out += "settings('iratio','Os184Os192'," +
+	out += "IsoplotR::settings('iratio','Os184Os192'," +
 	    prefs.constants.iratio.Os184Os192[0] + "," +
 	    prefs.constants.iratio.Os184Os192[1] + ");"
-	out += "settings('iratio','Os186Os192'," +
+	out += "IsoplotR::settings('iratio','Os186Os192'," +
 	    prefs.constants.iratio.Os186Os192[0] + "," +
 	    prefs.constants.iratio.Os186Os192[1] + ");"
-	out += "settings('iratio','Os187Os192'," +
+	out += "IsoplotR::settings('iratio','Os187Os192'," +
 	    prefs.constants.iratio.Os187Os192[0] + "," +
 	    prefs.constants.iratio.Os187Os192[1] + ");"
-	out += "settings('iratio','Os188Os192'," +
+	out += "IsoplotR::settings('iratio','Os188Os192'," +
 	    prefs.constants.iratio.Os188Os192[0] + "," +
 	    prefs.constants.iratio.Os188Os192[1] + ");"
-	out += "settings('iratio','Os190Os192'," +
+	out += "IsoplotR::settings('iratio','Os190Os192'," +
 	    prefs.constants.iratio.Os190Os192[0] + "," +
 	    prefs.constants.iratio.Os190Os192[1] + ");"
-	out += "settings('lambda','Re187'," +
+	out += "IsoplotR::settings('lambda','Re187'," +
 	    prefs.constants.lambda.Re187[0] + "," +
 	    prefs.constants.lambda.Re187[1] + ");"	
 	break;
     case 'Rb-Sr':
-	out += "settings('iratio','Rb85Rb87'," +
+	out += "IsoplotR::settings('iratio','Rb85Rb87'," +
 	    prefs.constants.iratio.Rb85Rb87[0] + "," +
 	    prefs.constants.iratio.Rb85Rb87[1] + ");"
-	out += "settings('iratio','Sr84Sr86'," +
+	out += "IsoplotR::settings('iratio','Sr84Sr86'," +
 	    prefs.constants.iratio.Sr84Sr86[0] + "," +
 	    prefs.constants.iratio.Sr84Sr86[1] + ");"
-	out += "settings('iratio','Sr87Sr86'," +
+	out += "IsoplotR::settings('iratio','Sr87Sr86'," +
 	    prefs.constants.iratio.Sr87Sr86[0] + "," +
 	    prefs.constants.iratio.Sr87Sr86[1] + ");"
-	out += "settings('iratio','Sr88Sr86'," +
+	out += "IsoplotR::settings('iratio','Sr88Sr86'," +
 	    prefs.constants.iratio.Sr88Sr86[0] + "," +
 	    prefs.constants.iratio.Sr88Sr86[1] + ");"
-	out += "settings('lambda','Rb87'," +
+	out += "IsoplotR::settings('lambda','Rb87'," +
 	    prefs.constants.lambda.Rb87[0] + "," +
 	    prefs.constants.lambda.Rb87[1] + ");"
 	break;
     case 'Lu-Hf':
-	out += "settings('iratio','Lu176Lu175'," +
+	out += "IsoplotR::settings('iratio','Lu176Lu175'," +
 	    prefs.constants.iratio.Lu176Lu175[0] + "," +
 	    prefs.constants.iratio.Lu176Lu175[1] + ");"
-	out += "settings('iratio','Hf174Hf177'," +
+	out += "IsoplotR::settings('iratio','Hf174Hf177'," +
 	    prefs.constants.iratio.Hf174Hf177[0] + "," +
 	    prefs.constants.iratio.Hf174Hf177[1] + ");"
-	out += "settings('iratio','Hf176Hf177'," +
+	out += "IsoplotR::settings('iratio','Hf176Hf177'," +
 	    prefs.constants.iratio.Hf176Hf177[0] + "," +
 	    prefs.constants.iratio.Hf176Hf177[1] + ");"
-	out += "settings('iratio','Hf178Hf177'," +
+	out += "IsoplotR::settings('iratio','Hf178Hf177'," +
 	    prefs.constants.iratio.Hf178Hf177[0] + "," +
 	    prefs.constants.iratio.Hf178Hf177[1] + ");"
-	out += "settings('iratio','Hf179Hf177'," +
+	out += "IsoplotR::settings('iratio','Hf179Hf177'," +
 	    prefs.constants.iratio.Hf179Hf177[0] + "," +
 	    prefs.constants.iratio.Hf179Hf177[1] + ");"
-	out += "settings('iratio','Hf180Hf177'," +
+	out += "IsoplotR::settings('iratio','Hf180Hf177'," +
 	    prefs.constants.iratio.Hf180Hf177[0] + "," +
 	    prefs.constants.iratio.Hf180Hf177[1] + ");"
-	out += "settings('lambda','Lu176'," +
+	out += "IsoplotR::settings('lambda','Lu176'," +
 	    prefs.constants.lambda.Lu176[0] + "," +
 	    prefs.constants.lambda.Lu176[1] + ");"
 	break;
     case 'U-Th-He': 
-	out += "settings('iratio','U238U235'," +
+	out += "IsoplotR::settings('iratio','U238U235'," +
 	    prefs.constants.iratio.U238U235[0] + "," +
 	    prefs.constants.iratio.U238U235[1] + ");"
-	out += "settings('lambda','U238'," +
+	out += "IsoplotR::settings('lambda','U238'," +
 	    prefs.constants.lambda.U238[0] + "," +
 	    prefs.constants.lambda.U238[1] + ");"
-	out += "settings('lambda','U235'," +
+	out += "IsoplotR::settings('lambda','U235'," +
 	    prefs.constants.lambda.U235[0] + "," +
 	    prefs.constants.lambda.U235[1] + ");"
-	out += "settings('lambda','Th232'," +
+	out += "IsoplotR::settings('lambda','Th232'," +
 	    prefs.constants.lambda.Th232[0] + "," +
 	    prefs.constants.lambda.Th232[1] + ");"
-	out += "settings('lambda','Sm147'," +
+	out += "IsoplotR::settings('lambda','Sm147'," +
 	    prefs.constants.lambda.Sm147[0] + "," +
 	    prefs.constants.lambda.Sm147[1] + ");"
 	break;
     case 'fissiontracks':
 	if (prefs.settings.fissiontracks.format == 3){
 	    var mineral = prefs.settings.fissiontracks.mineral;
-	    out += "settings('iratio','U238U235'," +
+	    out += "IsoplotR::settings('iratio','U238U235'," +
 		prefs.constants.iratio.U238U235[0] + "," +
 		prefs.constants.iratio.U238U235[1] + ");"
-	    out += "settings('lambda','U238'," +
+	    out += "IsoplotR::settings('lambda','U238'," +
 		prefs.constants.lambda.U238[0] + "," +
 		prefs.constants.lambda.U238[1] + ");"
-	    out += "settings('lambda','fission'," +
+	    out += "IsoplotR::settings('lambda','fission'," +
 		prefs.constants.lambda.fission[0] + "," +
 		prefs.constants.lambda.fission[1] + ");"
-	    out += "settings('etchfact','" + mineral + "'," +
+	    out += "IsoplotR::settings('etchfact','" + mineral + "'," +
 		prefs.constants.etchfact[mineral] + ");"
-	    out += "settings('tracklength','" + mineral + "'," +
+	    out += "IsoplotR::settings('tracklength','" + mineral + "'," +
 		prefs.constants.tracklength[mineral] + ");"
-	    out += "settings('mindens','" + mineral + "'," +
+	    out += "IsoplotR::settings('mindens','" + mineral + "'," +
 		prefs.constants.mindens[mineral] + ");"
 	}	
 	break;
@@ -631,43 +631,43 @@ function getRcommand(prefs){
     }
     switch (plotdevice) {
     case 'concordia': 
-	out += "concordia(dat"; 
+	out += "IsoplotR::concordia(dat"; 
 	break;
     case 'evolution': 
-	out += "evolution(dat"; 
+	out += "IsoplotR::evolution(dat"; 
 	break;
     case 'regression':
-	out += "dat <- data2york(dat,format=" +
+	out += "dat <- IsoplotR::data2york(dat,format=" +
 	    prefs.settings['other'].format + ");"
     case 'isochron':
-	out += "isochron(dat";
+	out += "IsoplotR::isochron(dat";
 	break;
     case 'radial':
-	out += "radialplot(dat"
+	out += "IsoplotR::radialplot(dat"
 	break;
     case 'spectrum':
-	out += "agespectrum(dat"
+	out += "IsoplotR::agespectrum(dat"
 	break;
     case 'average':
-	out += "weightedmean(dat"
+	out += "IsoplotR::weightedmean(dat"
 	break;
     case 'KDE':
-	out += "kde(dat";
+	out += "IsoplotR::kde(dat";
 	break;
     case 'CAD':
-	out += "cad(dat";
+	out += "IsoplotR::cad(dat";
 	break;
     case 'set-zeta':
-	out += "set.zeta(dat";
+	out += "IsoplotR::set.zeta(dat";
 	break;
     case 'helioplot':
-	out += "helioplot(dat";
+	out += "IsoplotR::helioplot(dat";
 	break;
     case 'MDS':
-	out += "mds(dat";
+	out += "IsoplotR::mds(dat";
 	break;
     case 'ages':
-	out += "age(dat";
+	out += "IsoplotR::age(dat";
 	break;
     }
     out += options +");"

@@ -1,47 +1,3 @@
-library(shiny)
-
-source("ArAr.R")
-source("age.R")
-source("agespectrum.R")
-source("botev.R")
-source("cad.R")
-source("central.R")
-source("ci.R")
-source("concordia.R")
-source("commonPb.R")
-source("constants.R")
-source("discordia.R")
-source("diseq.R")
-source("errorellipse.R")
-source("evolution.R")
-source("fissiontracks.R")
-source("helioplot.R")
-source("io.R")
-source("isochron.R")
-source("json.R")
-source("KCa.R")
-source("kde.R")
-source("ludwig.R")
-source("LuHf.R")
-source("mds.R")
-source("peakfit.R")
-source("PD.R")
-source("PbPb.R")
-source("radialplot.R")
-source("regression.R")
-source("ReOs.R")
-source("RbSr.R")
-source("SmNd.R")
-source("ThU.R")
-source("titterington.R")
-source("toolbox.R")
-source("UPb.R")
-source("UThHe.R")
-source("weightedmean.R")
-source("york.R")
-
-settings(fname="constants.json")
-
 shiny::shinyServer(function(input,output,session){
 
     selection2data <- function(method="U-Pb",format=1,ierr=1,
@@ -199,13 +155,13 @@ shiny::shinyServer(function(input,output,session){
             mat <- subset(mat,select=-nc) # the last column may contain letters
         }
         if (identical(method,'U-Pb')){
-            out <- read.data(mat,method=method,format=format,ierr=ierr,
+            out <- IsoplotR::read.data(mat,method=method,format=format,ierr=ierr,
                                        U48=U48,Th0U8=Th0U8,Ra6U8=Ra6U8,Pa1U5=Pa1U5)
         } else if (identical(method,'Th-U')){
-            out <- read.data(mat,method=method,format=format,
+            out <- IsoplotR::read.data(mat,method=method,format=format,
                                        ierr=ierr,Th02=Th02,Th02U48=Th02U48)
         } else {
-            out <- read.data(mat,method=method,format=format,ierr=ierr)
+            out <- IsoplotR::read.data(mat,method=method,format=format,ierr=ierr)
         }
         out
     }
