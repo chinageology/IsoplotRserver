@@ -10,7 +10,7 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 用户名 : isoplotr
 密码 : isoplotr
 
-[百度网盘 提取码：ov1r ](https://pan.baidu.com/s/1sAIgA9WT3z-aHrb2LMG6Ww)
+[Baiduyun Code：96zh](https://pan.baidu.com/s/1KCtrPNnYjFlS5AIFcZq1pg)
 
 [微软云盘](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
 

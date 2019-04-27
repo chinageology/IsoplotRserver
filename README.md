@@ -12,7 +12,7 @@ This repo is the steps fo building a server of **IsoplotR**. **IsoplotR** is wri
 Username : isoplotr
 Password : isoplotr
 
-[Baiduyun Code：ov1r ](https://pan.baidu.com/s/1sAIgA9WT3z-aHrb2LMG6Ww)
+[Baiduyun Code：96zh](https://pan.baidu.com/s/1KCtrPNnYjFlS5AIFcZq1pg)
 
 
 [Onedrive](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
