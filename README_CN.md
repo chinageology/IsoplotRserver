@@ -14,6 +14,17 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 
 [微软云盘](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
 
+## Docker 用户
+
+```Bash
+docker run -t -i -p 3838:3838  chinageology/isoplotrserver
+cd /etc/init.d
+shiny-server
+```
+
+假如你的 Docker 容器的ip 是 10.10.10.10, 浏览器中访问 10.10.10.10:3838 就可以使用了。
+
+
 ## Ubuntu 18.04 server/desktop 下的安装指南
 
 你首先需要在电脑里安装好**R**(参考

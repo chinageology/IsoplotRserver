@@ -17,6 +17,15 @@ Password : isoplotr
 
 [Onedrive](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
 
+## For Docker User
+
+```Bash
+docker run -t -i -p 3838:3838  chinageology/isoplotrserver
+cd /etc/init.d
+shiny-server
+```
+
+For example, the IP of your docker conatiner is 10.10.10.10, then you can visit 10.10.10.10:3838 to use isoplotr.
 
 ## For Ubuntu 18.04 server ONLY
 
