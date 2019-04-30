@@ -1,11 +1,12 @@
 # IsoplotRserver
+
 All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
+
 # IsoplotRgui
 
 这个项目是 **IsoplotR** 这一软件的服务器项目. **IsoplotR** 是一个自由的开源软件,用于同位素地球化学和地质年代学数据处理,由[Pieter Vermeesch](http://ucl.ac.uk/~ucfbpve)开发, 是对 Kenneth Ludwig 当年所开发的 Excel 插件 **Isoplot** 的替代品. 
 
-
-## 下载安装好 IsoplotRserver/Gui 的虚拟机
+# 下载安装好 IsoplotRserver/Gui 的虚拟机
 
 用户名 : isoplotr
 密码 : isoplotr
@@ -14,7 +15,7 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 
 [微软云盘](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
 
-## Docker 用户
+# Docker 用户
 
 ```Bash
 docker run -t -i -p 3838:3838  chinageology/isoplotrserver
@@ -25,22 +26,24 @@ shiny-server
 
 假如你的 Docker 容器的ip 是 10.10.10.10, 浏览器中访问 10.10.10.10:3838/IsoplotRshiny_cn/ 就可以使用了。
 
-
-## Ubuntu 18.04 server/desktop 下的安装指南
+# Ubuntu 18.04 server/desktop 下的安装指南
 
 你首先需要在电脑里安装好**R**(参考
 [http://r-project.org](http://r-project.org)). 而且推荐你安装最新版本的.
 
 这就需要你在终端内运行下面的代码先导入密钥:
+
 ```Bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 ```
 
 导入了上面的密钥之后, 你需要编辑源列表, 用编辑器(下面以nano为例)来添加新的源:
+
 ```Bash
 nano /etc/apt/sources.list
 ```
 上面的命令是运行nano编辑器打开源列表文件, 然后在最上面粘贴上下面的代码:
+
 ```Bash
 # add bionic R3.5
 deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
@@ -55,10 +58,12 @@ sudo apt update
 ```
 
 然后就要安装R语言和一些重要的依赖包了(这里要注意一定要安装第二行的那些依赖包,否则后续的devtool没发成功安装):
+
 ```Bash
 sudo apt install r-base r-base-dev
 sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev gdebi git
 ```
+
 上面的基础包安装完了之后, 就需要安装 **devtools** 包,这样才能从 Github 来安装 IsoplotRgui 在内的各种软件.
 这里你需要运行下面的命令来安装 devtools (注意这里是在终端调用R来运行的, 不用去进入R就可以, 这样安装的包所有用户都能用,用来构建服务器必须这样安装):
 
@@ -66,8 +71,8 @@ sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev gdeb
 sudo su - -c "R -e \"install.packages('devtools',repos='http://cran.rstudio.com/')\""
 ```
 
-
 安装完了devtool 之后, 就要安装 shiny 1.2.0 版本, 目前最新版本的 shiny 和IsoplotRgui以及IsoplotR的服务器也不兼容,必须用下面这行代码所指定的1.2.0版本才可以
+
 ```Bash
 #sudo su - -c "R -e \"install.packages('shiny',repos='http://cran.rstudio.com/')\""
 #sudo su - -c "R -e \"devtools::install_github('rstudio/shiny',force=TRUE)\""
@@ -76,6 +81,7 @@ sudo su - -c "R -e \"devtools::install_version('shiny',version = '1.2.0', repos 
 ```
 
 上面的两个项目安装完毕之后,就是要安装IsoplotR以及IsoplotRgui了:
+
 ```Bash
 sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotRgui',force=TRUE)\""
@@ -84,11 +90,13 @@ sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotRgui',force=TRUE)
 ## 安装 Shiny Server
 
 首先,你需要安装 gdebi 以及 wget:
+
 ```Bash
 sudo apt install gdebi-core wget
 ```
 
 然后,用 wget 来下载 rstudio server 以及 shiny server 的安装包,然后用 gdebi 来安装:
+
 ```Bash
 wget https://download2.rstudio.org/rstudio-server-1.0.136-amd64.deb
 sudo gdebi rstudio-server-1.0.136-amd64.deb
@@ -97,7 +105,6 @@ sudo gdebi shiny-server-1.5.9.923-amd64.deb
 ```
 
 ## 搭建服务器
-
 
 在终端中输入下面的命令来将IsoplotR服务器构建所需的内容同步到你的机器上:
 
@@ -120,17 +127,16 @@ cp -R IsoplotRshiny /srv/shiny-server/
 或者你也可以用你机器上的ip来访问, 比如你的地址是 10.10.10.10
 那就可以访问: http://10.10.10.10:3838/IsoplotRshiny/
 
-
-
 ## 更新安装好的IsoplotR到最新版
 
-
 首先利用 devtools 从 github 安装 IsoplotR 这一核心程序的最近版:
+
 ```Bash
 sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 ```
 
 然后再用 git 来克隆 IsoplotRgui 到本地文件夹, 将 `IsoplotRgui/inst/shiny-examples/myapp/` 这个目录下的全部内容复制覆盖到你的服务器文件夹即可，这里假设你的服务器在 `/srv/shiny-server/IsoplotRshiny/`:
+
 ```Bash
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
@@ -138,9 +144,7 @@ cd IsoplotRgui/inst/shiny-examples/myapp/
 sudo cp -R * /srv/shiny-server/IsoplotRshiny/
 ```
 
-
 ## 社区服务器
-
 
 如果你安装不成功又着急用, 可以使用志愿者们搭建提供的服务器:
 
