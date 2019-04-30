@@ -25,7 +25,7 @@ cd /etc/init.d
 shiny-server
 ```
 
-For example, the IP of your docker conatiner is 10.10.10.10, then you can visit 10.10.10.10:3838 to use isoplotr.
+For example, the IP of your docker conatiner is 10.10.10.10, then you can visit 10.10.10.10:3838/IsoplotRshiny/R/ to use isoplotr.
 
 ## For Ubuntu 18.04 server ONLY
 

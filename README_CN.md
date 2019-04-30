@@ -22,7 +22,7 @@ cd /etc/init.d
 shiny-server
 ```
 
-假如你的 Docker 容器的ip 是 10.10.10.10, 浏览器中访问 10.10.10.10:3838 就可以使用了。
+假如你的 Docker 容器的ip 是 10.10.10.10, 浏览器中访问 10.10.10.10:3838/IsoplotRshiny_cn/R/ 就可以使用了。
 
 
 ## Ubuntu 18.04 server/desktop 下的安装指南
