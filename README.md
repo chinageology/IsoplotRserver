@@ -22,10 +22,14 @@ Password : isoplotr
 ```Bash
 docker run -t -i -p 3838:3838  chinageology/isoplotrserver
 cd /etc/init.d
+sh update
 shiny-server
 ```
 
+
 For example, the IP of your docker conatiner is 10.10.10.10, then you can visit 10.10.10.10:3838/IsoplotRshiny/ to use isoplotr.
+
+
 
 ## For Ubuntu 18.04 server ONLY
 
