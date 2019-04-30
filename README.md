@@ -25,7 +25,7 @@ cd /etc/init.d
 shiny-server
 ```
 
-For example, the IP of your docker conatiner is 10.10.10.10, then you can visit 10.10.10.10:3838/IsoplotRshiny/R/ to use isoplotr.
+For example, the IP of your docker conatiner is 10.10.10.10, then you can visit 10.10.10.10:3838/IsoplotRshiny/ to use isoplotr.
 
 ## For Ubuntu 18.04 server ONLY
 
@@ -110,7 +110,7 @@ cd IsoplotRserver
 cp -R IsoplotRshiny /srv/shiny-server/
 ```
 
-Then visit http://yourserverip:3838/IsoplotRshiny/R/
+Then visit http://yourserverip:3838/IsoplotRshiny/
 
 ## Update A Installed Server To Latest
 
@@ -125,7 +125,7 @@ Git clone the latest version of IsoplotRgui, and then copy all inside `IsoplotRg
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
-sudo cp -R * /srv/shiny-server/IsoplotRshiny/R/
+sudo cp -R * /srv/shiny-server/IsoplotRshiny/
 ```
 
 ## Community Servers

@@ -22,7 +22,7 @@ cd /etc/init.d
 shiny-server
 ```
 
-假如你的 Docker 容器的ip 是 10.10.10.10, 浏览器中访问 10.10.10.10:3838/IsoplotRshiny_cn/R/ 就可以使用了。
+假如你的 Docker 容器的ip 是 10.10.10.10, 浏览器中访问 10.10.10.10:3838/IsoplotRshiny_cn/ 就可以使用了。
 
 
 ## Ubuntu 18.04 server/desktop 下的安装指南
@@ -114,10 +114,10 @@ cp -R IsoplotRshiny /srv/shiny-server/
 然后访问你的服务器ip加上3838端口下的 IsoplotRshiny 目录.
 
 假如你的域名是 fake.com
-你就可以访问:  http://fake.com:3838/IsoplotRshiny/R/
+你就可以访问:  http://fake.com:3838/IsoplotRshiny/
 
 或者你也可以用你机器上的ip来访问, 比如你的地址是 10.10.10.10
-那就可以访问: http://10.10.10.10:3838/IsoplotRshiny/R/
+那就可以访问: http://10.10.10.10:3838/IsoplotRshiny/
 
 
 
@@ -134,7 +134,7 @@ sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
-sudo cp -R * /srv/shiny-server/IsoplotRshiny/R/
+sudo cp -R * /srv/shiny-server/IsoplotRshiny/
 ```
 
 
