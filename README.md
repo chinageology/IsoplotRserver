@@ -8,15 +8,6 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 
 This repo is the steps fo building a server of **IsoplotR**. **IsoplotR** is writen by [Pieter Vermeesch](http://ucl.ac.uk/~ucfbpve).
 
-# Download A Packed up Virtual Machine wtih IsoplotRserver/Gui built inside
-
-Username : isoplotr
-Password : isoplotr
-
-[Baiduyun Code：96zh](https://pan.baidu.com/s/1KCtrPNnYjFlS5AIFcZq1pg)
-
-[Onedrive](https://1drv.ms/f/s!AnIw_Lqr4g5tgTlWR0P4WgjYwef8)
-
 # For Docker User
 
 ```Bash
