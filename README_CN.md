@@ -19,8 +19,7 @@ All needed to build a IsoplotR server. 搭建 IsoplotR 服务器所需内容
 
 ```Bash
 docker run -t -i -p 3838:3838  chinageology/isoplotrserver
-cd /etc/init.d
-sh update
+sh /etc/init.d/update
 shiny-server
 ```
 
