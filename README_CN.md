@@ -25,6 +25,7 @@ shiny-server
 
 ```Bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 ```
 
 导入了上面的密钥之后, 你需要编辑源列表, 用编辑器(下面以nano为例)来添加新的源:
