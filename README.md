@@ -103,14 +103,14 @@ Clone this repo to get the files for the IsoplotR server:
 git clone https://github.com/chinageology/IsoplotRserver
 ```
 
-Get into the cloned folder `IsoplotRserver`, copy the who folder `IsoplotRshiny` to `/srv/shiny-server/`:
+Get into the cloned folder `IsoplotRserver`, copy the who folder `IsoplotR` to `/srv/shiny-server/`:
 
 ```Bash
 cd IsoplotRserver
-cp -R IsoplotRshiny /srv/shiny-server/
+cp -R IsoplotR /srv/shiny-server/
 ```
 
-Then visit http://yourserverip:3838/IsoplotRshiny/
+Then visit http://yourserverip:3838/IsoplotR/
 
 ## Update A Installed Server To Latest
 
@@ -120,13 +120,13 @@ Update IsoplotR to the latest on github:
 sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 ```
 
-Git clone the latest version of IsoplotRgui, and then copy all inside `IsoplotRgui/inst/shiny-examples/myapp/` to your server location, here as `/srv/shiny-server/IsoplotRshiny/`:
+Git clone the latest version of IsoplotRgui, and then copy all inside `IsoplotRgui/inst/shiny-examples/myapp/` to your server location, here as `/srv/shiny-server/IsoplotR/`:
 
 ```Bash
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
-sudo cp -R * /srv/shiny-server/IsoplotRshiny/
+sudo cp -R * /srv/shiny-server/IsoplotR/
 ```
 
 ## Community Servers
