@@ -47,7 +47,7 @@ deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
 sudo apt update
 ```
 
-然后就要安装R语言和一些重要的依赖包了(这里要注意一定要安装第二行的那些依赖包,否则后续的devtool没发成功安装):
+然后就要安装R语言和一些重要的依赖包了(这里要注意一定要安装第二行的那些依赖包,否则后续的devtool没法成功安装):
 
 ```Bash
 sudo apt install r-base r-base-dev
