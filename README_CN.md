@@ -126,13 +126,13 @@ cp -R IsoplotR /srv/shiny-server/
 sudo su - -c "R -e \"devtools::install_github('pvermees/IsoplotR',force=TRUE)\""
 ```
 
-然后再用 git 来克隆 IsoplotRgui 到本地文件夹, 将 `IsoplotRgui/inst/shiny-examples/myapp/` 这个目录下的全部内容复制覆盖到你的服务器文件夹即可，这里假设你的服务器在 `/srv/shiny-server/IsoplotRshiny/`:
+然后再用 git 来克隆 IsoplotRgui 到本地文件夹, 将 `IsoplotRgui/inst/shiny-examples/myapp/` 这个目录下的全部内容复制覆盖到你的服务器文件夹即可，这里假设你的服务器在 `/srv/shiny-server/IsoplotR`:
 
 ```Bash
 cd /tmp
 git clone https://github.com/pvermees/IsoplotRgui
 cd IsoplotRgui/inst/shiny-examples/myapp/
-sudo cp -R * /srv/shiny-server/IsoplotRshiny/
+sudo cp -R * /srv/shiny-server/IsoplotR/
 ```
 
 ## 社区服务器
