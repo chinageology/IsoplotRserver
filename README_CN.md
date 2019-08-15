@@ -107,16 +107,16 @@ git clone https://github.com/chinageology/IsoplotRserver
 
 ```Bash
 cd IsoplotRserver
-cp -R IsoplotRshiny /srv/shiny-server/
+cp -R IsoplotR /srv/shiny-server/
 ```
 
-然后访问你的服务器ip加上3838端口下的 IsoplotRshiny 目录.
+然后访问你的服务器ip加上3838端口下的 IsoplotR 目录.
 
 假如你的域名是 fake.com
-你就可以访问:  http://fake.com:3838/IsoplotRshiny/
+你就可以访问:  http://fake.com:3838/IsoplotR/
 
 或者你也可以用你机器上的ip来访问, 比如你的地址是 10.10.10.10
-那就可以访问: http://10.10.10.10:3838/IsoplotRshiny/
+那就可以访问: http://10.10.10.10:3838/IsoplotR/
 
 ## 更新安装好的IsoplotR到最新版
 
