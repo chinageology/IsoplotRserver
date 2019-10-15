@@ -47,11 +47,11 @@ function help(id){
 	    "<tt>IsoplotR</tt> automatically set a suitable value.";
 	break;
     case "help-common-Pb-option":
-	text = "apply a common lead correction with one of three methods:" +
-	    "<ol><li>infer the initial Pb-composition from the Stacey & Kramers " +
-	    "two stage isotope evolution model</li>" +
+	text = "apply a common lead correction with one of three methods:<ol>" +
+	    "<li>use a nominal initial Pb-composition</li>" +
 	    "<li>use the isochron intercept as the initial Pb-composition</li>" +
-	    "<li>use a nominal initial Pb-composition</li></ol>";
+	    "<li class='hide4PbPb'>infer the initial Pb-composition from the Stacey & Kramers " +
+	    "two stage isotope evolution model</li></ol>";
 	break;
     case "help-anchor-option":
 	text = "Select an option to either <ol> " +
@@ -259,7 +259,7 @@ function help(id){
 	    "the corresponding aliquot (i.e., the row number in the input table)."
 	break;
     case "help-U238U235":
-	text = "The natural isotopic abundance ratio of uranium and it standard error." +
+	text = "The natural isotopic abundance ratio of uranium and it standard error. " +
 	    "Default values are taken from Hiess et al. (2012). " +
 	    "To use the IUGS-recommended value of Steiger and J&auml;ger (1977), " +
 	    "change this to 137.88 &plusmn; 0.";

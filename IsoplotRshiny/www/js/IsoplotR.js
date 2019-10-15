@@ -18,6 +18,10 @@ $(function(){
 	    var sfile = './js/settings.json';
 	    $.getJSON(sfile, function(data){
 		IsoplotR.settings = data;
+		IsoplotR.settings.geochronometer =
+		    $('option:selected', $("#geochronometer")).attr('id');
+		//IsoplotR.settings.language =
+		//    $('option:selected', $("#language")).attr('id');
 		var dfile = './js/data.json';
 		$.getJSON(dfile, function(data){
 		    IsoplotR.data = data;
@@ -454,7 +458,7 @@ $(function(){
 	    } else {
 		$(".show4diseq").hide();
 	    }
-	    if (set.commonPb!=3 & pd.anchor!=2){
+	    if (set.commonPb!=1 & pd.anchor!=2){
 		$('.show4commonPbwithout204').hide();
 		$('.show4commonPbwith204').hide();
 		$('.show4commonPbwith208').hide();
@@ -489,10 +493,10 @@ $(function(){
 		$('.hide4PbPb3').hide();
 		break;
 	    }
-	    if (set.commonPb==3){
-		$('.show4commonPb3').show();
+	    if (set.commonPb==1){
+		$('.show4nominalCommonPb').show();
 	    } else {
-		$('.show4commonPb3').hide();
+		$('.show4nominalCommonPb').hide();
 	    }
 	    break;
 	case 'Th-U':
@@ -1233,7 +1237,7 @@ $(function(){
 	var gcsettings = IsoplotR.settings[geochronometer];
 	var pdsettings = IsoplotR.settings[plotdevice];
 	var set = IsoplotR.constants;
-	IsoplotR.settings.language = $('option:selected', $('#language')).attr('value');
+	//IsoplotR.settings.language = $('option:selected', $('#language')).attr('value');
 	switch (geochronometer){
 	case 'U-Pb':
 	    if (plotdevice == 'average' | plotdevice == 'KDE' |
@@ -1963,8 +1967,12 @@ $(function(){
 
     function welcome(){
 	$('#myplot').load('welcome.html',function(){
-	    $('#version').load('version.txt');
-	    showOrHide();
+	    $('#version').load('version.txt',function(){
+		$('#latestversion').load('https://raw.githubusercontent.com/pvermees/IsoplotRgui/master/inst/shiny-examples/myapp/www/version.txt',function(){
+		    showOrHide();
+		});
+	    });
+	    
 	});
     }
     

@@ -266,9 +266,15 @@ function getOptions(prefs){
 	out += ",non.plateau.col=" + pdsettings.nonplateaucol;
 	out += ",clabel='" + pdsettings.clabel + "'";
 	if (geochronometer=='other'){
-	    out += ",hide=omitter(flags=c('x','X'),method='" + geochronometer + "')";
+	    out += ",omit=omitter(flags='x',method='" + geochronometer + "')";
 	} else {
-	    out += ",hide=omitter(flags=c('x','X'),method='" + geochronometer + "'";
+	    out += ",omit=omitter(flags='x',method='" + geochronometer + "'";
+	    out += ",format=" + gcsettings.format + ")";	    
+	}
+	if (geochronometer=='other'){
+	    out += ",hide=omitter(flags='X',method='" + geochronometer + "')";
+	} else {
+	    out += ",hide=omitter(flags='X',method='" + geochronometer + "'";
 	    out += ",format=" + gcsettings.format + ")";	    
 	}
 	break;
@@ -428,16 +434,15 @@ function getOptions(prefs){
 	    out += ",detritus=" + gcsettings.detritus;
 	case 'Ar-Ar':
 	case 'K-Ca':
-	case 'Pb-Pb':
 	case 'Rb-Sr':
 	case 'Sm-Nd':
 	case 'Re-Os':
 	case 'Lu-Hf':
-	    out += ",isochron=FALSE";
 	    out += ",i2i=" + gcsettings.i2i;
 	    break;
-	case 'U-Pb':
 	case 'Pb-Pb':
+	    out += ",isochron=FALSE";
+	case 'U-Pb':
 	    out += ",common.Pb=" + gcsettings.commonPb;
 	    break;
 	default:
