@@ -1,0 +1,22 @@
+1: In install.packages("devtools", repos = "http://cran.rstudio.com/") :
+  installation of package ‘fs’ had non-zero exit status
+2: In install.packages("devtools", repos = "http://cran.rstudio.com/") :
+  installation of package ‘httpuv’ had non-zero exit status
+3: In install.packages("devtools", repos = "http://cran.rstudio.com/") :
+  installation of package ‘shiny’ had non-zero exit status
+4: In install.packages("devtools", repos = "http://cran.rstudio.com/") :
+  installation of package ‘usethis’ had non-zero exit status
+5: In install.packages("devtools", repos = "http://cran.rstudio.com/") :
+  installation of package ‘crosstalk’ had non-zero exit status
+6: In install.packages("devtools", repos = "http://cran.rstudio.com/") :
+  installation of package ‘DT’ had non-zero exit status
+7: In install.packages("devtools", repos = "http://cran.rstudio.com/") :
+  installation of package ‘devtools’ had non-zero exit status
+
+ sudo su - -c "R -e \"install.packages('fs',dependencies = TRUE, INSTALL_opts = '--no-lock')       
+ sudo su - -c "R -e \"install.packages('httpuv',dependencies = TRUE, INSTALL_opts = '--no-lock')\""                      
+ sudo su - -c "R -e \"install.packages('shiny',dependencies = TRUE, INSTALL_opts = '--no-lock')\""             
+ sudo su - -c "R -e \"install.packages('usethis',dependencies = TRUE, INSTALL_opts = '--no-lock')\""                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+ sudo su - -c "R -e \"install.packages('crosstalk',dependencies = TRUE, INSTALL_opts = '--no-lock')\""     
+ sudo su - -c "R -e \"install.packages('DT',dependencies = TRUE, INSTALL_opts = '--no-lock')\""     
+ sudo su - -c "R -e \"install.packages('devtools',dependencies = TRUE, INSTALL_opts = '--no-lock')\""                                                                                                                                                                                                                                                                                                                                                                                                                     
