@@ -16,3 +16,6 @@ sudo cp -R server.R /srv/shiny-server/IsoplotR
 cd /tmp                                                                                            
 sudo rm -rf IsoplotR.zip IsoplotRgui.zip IsoplotRgui-master                                        
 sudo systemctl restart shiny-server  
+
+cd /etc/init.d
+shiny-server
